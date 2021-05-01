@@ -7,10 +7,6 @@ html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
 }
-body {
-  overflow-y: hidden;
-  padding: 10px;
-}
 
 /*Header*/
 header ul {
@@ -40,22 +36,81 @@ header img {
 main {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 95vh;
 }
 .container {
   margin: auto 0;
-  width: 25%;
+  width: 35%;
 }
-.container img {
-  width: 100%;
-}
-.search img {
-  width: 15px;
-}
-form i {
-  font-size: 1.4rem;
+.container > img {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-.search input{
-    width: 150%;
+form img {
+  position: absolute;
+  width: 12px;
+  z-index: 2;
+  right: 0;
+  margin: 14px;
+}
+
+form i {
+  position: absolute;
+  font-size: 1.4rem;
+  z-index: 2;
+  left: 0;
+  margin: 14px;
+  color: #a3a3a3;
+}
+.search {
+  position: relative;
+}
+.search input {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  border-radius: 30px;
+  border: 1px solid #a3a3a3;
+  padding-left: 40px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.btn_search , .btn_luck{
+  padding: 16px 30px;
+  margin: 2% 5% ;
+  background-color:#ececec;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/*Footer*/
+footer{
+    height: 5vh;
+    background-color: #ececec;
+    display: flex;
+}
+footer ul{
+    font-size: 1.3rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+footer ul:nth-child(1){
+    margin-right: auto;
+}
+footer ul:nth-child(2){
+    margin-left: auto;
+}
+
+
+footer li{
+    padding: 0 20px;
 }
